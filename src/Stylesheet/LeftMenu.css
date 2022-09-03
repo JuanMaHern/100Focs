@@ -1,0 +1,46 @@
+.left-menu {
+    width: 210px;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/Backgound.jpg);
+    background-repeat: repeat;
+    position: fixed;
+    border-right: 1px solid white;
+}
+
+.logo-cien-focs {
+    margin-top: 30px;
+    width: 150px;
+}
+
+@media (max-width: 819px){
+    .logo-cien-focs {
+        margin: 0;
+    }
+}
+
+.footer-left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px 30px 5px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.footer-content {
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}

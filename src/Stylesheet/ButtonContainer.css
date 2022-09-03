@@ -1,0 +1,9 @@
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    user-select: none;
+}

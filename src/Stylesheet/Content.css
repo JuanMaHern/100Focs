@@ -1,0 +1,29 @@
+.content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.inicio {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+} 
+.contact {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+} 

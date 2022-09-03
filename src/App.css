@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./Images/pernil.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+
+.nav-menu-container {
+    width: 100%;
+    height: 85px;
+    background-image: url('./Images/Backgound.jpg');
+    background-position: 10%;
+    display: none;
+}
+.menu-responsive {
+    display: none;
+}
+
+@media (max-width: 819px) {
+    .left-menu-container {
+        display: none;
+    }
+    .nav-menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .App {
+        display: block;
+    }
+    .cascade-menu {
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .menu-responsive {
+        width: 200px;
+        height: 250px;
+        z-index: 3;
+        position: absolute;
+        background-image: url('./Images/Backgound.jpg');
+        display: none;
+        align-items: center;
+        justify-content: center;
+        right: 1px;
+    }
+    .opened {
+        display: flex;
+    }
+    
+}

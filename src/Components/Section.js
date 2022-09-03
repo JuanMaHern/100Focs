@@ -1,0 +1,28 @@
+import React from "react";
+import '../Stylesheet/Section.css';
+import Article from './Article.js';
+import CargarDatos from "./CargarDatos.js";
+import Pernil from '../Images/pernil.jpg';
+
+function Section({ title, array, onSubmit }) {
+  let show;
+  if (title === 'Cargar Datos'){
+    show = <CargarDatos onSubmit={onSubmit} />
+  } 
+  return(
+    <div className={'section-container'}>
+      <h2 className="section-title">{title}</h2>
+      {show}
+      {array.map((article) =>
+        <Article 
+          image= {Pernil}
+          title={article.title}
+          text={article.text}
+        />
+        )
+      }
+    </div>
+  )
+}
+
+export default Section;

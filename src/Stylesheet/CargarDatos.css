@@ -1,0 +1,29 @@
+.cargar-datos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cargar-datos-form {
+    width: 100% ;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.selector, .text, .text-area, .button {
+    margin-top: 10px;
+}
+
+.text-area {
+    width: 300px;
+    height: 100px;
+}
+
+.button {
+    margin-bottom: 10px;
+}

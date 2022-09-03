@@ -1,0 +1,23 @@
+.section-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 10px 10px  220px;
+}
+
+h2 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 819px) {
+    .section-container {
+        margin: 10px 0;
+    }
+}
