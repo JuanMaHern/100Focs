@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/100Focs/static/css/main.f03a2ced.css",
+    "main.js": "/100Focs/static/js/main.f449ef20.js",
+    "static/media/pernil.jpg": "/100Focs/static/media/pernil.e1bc8f753c440212e1a8.jpg",
+    "static/media/Backgound.jpg": "/100Focs/static/media/Backgound.059edc9a43253201136c.jpg",
+    "static/media/Logo100Focs.png": "/100Focs/static/media/Logo100Focs.415b0ca8ad5d8752e064.png",
+    "index.html": "/100Focs/index.html",
+    "static/media/ButtonMenu.svg": "/100Focs/static/media/ButtonMenu.1291948eaceef78e8125df2e21705ac4.svg",
+    "main.f03a2ced.css.map": "/100Focs/static/css/main.f03a2ced.css.map",
+    "main.f449ef20.js.map": "/100Focs/static/js/main.f449ef20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f03a2ced.css",
+    "static/js/main.f449ef20.js"
+  ]
+}
