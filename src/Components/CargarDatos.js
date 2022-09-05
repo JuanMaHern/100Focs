@@ -7,6 +7,8 @@ function CargarDatos({ onSubmit }){
   const [section, setSection] = useState('Menu');
   const [title, setTitle] = useState('');
   const [text, setText] = useState('');
+  const [amount, setAmount] = useState('');
+  const [price, setPrice] = useState('');
 
   const manejarEnvio = e => {
     e.preventDefault();
@@ -15,12 +17,15 @@ function CargarDatos({ onSubmit }){
       section: section,
       title: title,
       text: text,
+      amount: amount,
+      price: price,
     };
     onSubmit(articuloNuevo);
     setSection('Menu');
     setText('');
     setTitle('');
-    alert('Cargado Puto');
+    setAmount('');
+    setPrice('');
   };
 
   return(
@@ -44,6 +49,20 @@ function CargarDatos({ onSubmit }){
           placeholder='Text' 
           value={text}
           onChange={(e) => setText(e.target.value)} 
+        />
+        <input 
+          className='amount'
+          type='text' 
+          placeholder='cantidad de platos' 
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)} 
+        />
+        <input 
+          className='price'
+          type='text' 
+          placeholder='Precio' 
+          value={price}
+          onChange={(e) => setPrice(e.target.value)} 
         />
         <button className='button' >Agregar Articulo</button>
       </form>

@@ -15,7 +15,7 @@
     color: white;
 }
 
-.selector, .text, .text-area, .button {
+.selector, .text, .text-area, .button, .amount, .price {
     margin-top: 10px;
 }
 

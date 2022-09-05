@@ -5,6 +5,7 @@ import Section from './Components/Section.js';
 import Logo from './Components/Logo';
 import ButtonMenu from './Images/ButtonMenu.svg';
 import ButtonContainer from './Components/ButtonContainer';
+import SocialContact from './Components/SocialContact';
 
 function App() {
 
@@ -30,8 +31,11 @@ function App() {
       id: article.id,
       section: article.section,
       title: article.title,
-      text: article.text
+      text: article.text,
+      amount: article.amount,
+      price: article.price
     }
+    console.log(newObject);
     if (array) {
       array.push(newObject);
       localStorage.setItem(key, JSON.stringify(array));
@@ -49,14 +53,19 @@ function App() {
       setOpen('opened')
     }
   }
+  const closeMenu = () =>{
+    if (open === 'opened'){
+      setOpen('')
+    }
+  }
 
   return (
-    <div className="App">
+    <div className="App" onClick={closeMenu}>
       <nav className='nav-menu-container'>
         <div className='logo-container'><Logo /></div>
         <div className='cascade-menu' onClick={openMenu}><img className='button-menu-img' src={ButtonMenu} alt='Button Menu' /></div>
       </nav>
-      <div className={`menu-responsive ${open}`}><ButtonContainer changeSection={changeSection} shown={section} /></div>
+      <div className={`menu-responsive ${open}`}><ButtonContainer changeSection={changeSection} shown={section} /> <SocialContact /></div>
       <div className='left-menu-container'>
         <LeftMenu changeSection={changeSection} shown={section} />
       </div>

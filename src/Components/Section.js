@@ -18,6 +18,8 @@ function Section({ title, array, onSubmit }) {
           image= {Pernil}
           title={article.title}
           text={article.text}
+          amount={article.amount}
+          price={article.price}
         />
         )
       }

@@ -26,7 +26,7 @@
     display: none;
 }
 
-@media (max-width: 819px) {
+@media (max-width: 1000px) {
     .left-menu-container {
         display: none;
     }
@@ -40,14 +40,14 @@
         display: block;
     }
     .cascade-menu {
-        width: 75px;
-        height: 75px;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
     }
     .logo-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        margin-left: 10px;
         flex-grow: 1;
     }
     .menu-responsive {
@@ -56,6 +56,7 @@
         z-index: 3;
         position: absolute;
         background-image: url('./Images/Backgound.jpg');
+        background-position: 32px 8px;
         display: none;
         align-items: center;
         justify-content: center;
@@ -63,6 +64,7 @@
     }
     .opened {
         display: flex;
+        flex-direction: column;
     }
     
 }
