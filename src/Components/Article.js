@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../Stylesheet/Article.css';
 import SocialIcons from '../Images/SocialIcons.svg';
+const Pictures = require.context('../Images/Pictures', true);
 
 function Article({ image, title, text, amount, price }) {
   const msj = `Estoy interesado/a en el *${title}* para *${amount}* personas a *$${price}* publicado en la pagina web`;
@@ -16,7 +17,7 @@ function Article({ image, title, text, amount, price }) {
     <div className='article-container' onClick={ExpandArticle}>
       <img
         className="article-image"
-        src={image}
+        src={Pictures(`./${image}.jpg`)}
         alt={title}
       />
       <div className='article-content'>

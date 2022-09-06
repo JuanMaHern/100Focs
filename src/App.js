@@ -12,6 +12,7 @@ function App() {
   const newArticle = {
     id: '01',
     section: 'Menu',
+    image: 'Pernil',
     title: 'Pernil',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa odit laborum! Reprehenderit dolorem culpa architecto mollitia quisquam ullam! Saepe aut a dignissimos quisquam quam expedita pariatur repellendus eveniet? Maiores!',
     amount: 15,
