@@ -9,17 +9,26 @@ import SocialContact from './Components/SocialContact';
 
 function App() {
 
+  const newArticle = {
+    id: '01',
+    section: 'Menu',
+    title: 'Pernil',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa odit laborum! Reprehenderit dolorem culpa architecto mollitia quisquam ullam! Saepe aut a dignissimos quisquam quam expedita pariatur repellendus eveniet? Maiores!',
+    amount: 15,
+    price: 5000
+  }
+
   const [section, setSection] = useState('');
-  const [content, setContent] = useState([])
+  const [content, setContent] = useState([newArticle])
 
   const changeSection = key => {
-    const array = JSON.parse(localStorage.getItem(key));
+    /* const array = JSON.parse(localStorage.getItem(key)); */
     setSection(key)
-    if (array) {
+    /* if (array) {
       setContent(array);
     } else {
       setContent([]);
-    }
+    } */
   }
 
   const agregarArticulo = article => {
@@ -44,6 +53,8 @@ function App() {
       localStorage.setItem(key, JSON.stringify(newArray));
     }
   }
+
+  
 
   const [open, setOpen]= useState('')
   const openMenu = () =>{

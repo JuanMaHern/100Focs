@@ -5,15 +5,16 @@ import CargarDatos from "./CargarDatos.js";
 import Pernil from '../Images/pernil.jpg';
 
 function Section({ title, array, onSubmit }) {
-  let show;
-  if (title === 'Cargar Datos'){
-    show = <CargarDatos onSubmit={onSubmit} />
-  } 
+  let show = [];
+  if (title == 'Menu'){
+    show = array;
+  }else {
+    show = [];
+  }
   return(
     <div className={'section-container'}>
       <h2 className="section-title">{title}</h2>
-      {show}
-      {array.map((article) =>
+      {show.map((article) =>
         <Article 
           image= {Pernil}
           title={article.title}
