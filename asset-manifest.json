@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/100Focs/static/css/main.5e37dd6c.css",
-    "main.js": "/100Focs/static/js/main.29be4954.js",
-    "static/media/pernil.jpg": "/100Focs/static/media/pernil.e1bc8f753c440212e1a8.jpg",
+    "main.css": "/100Focs/static/css/main.bf831736.css",
+    "main.js": "/100Focs/static/js/main.8d45bf88.js",
+    "static/media/Pernil.jpg": "/100Focs/static/media/Pernil.e1bc8f753c440212e1a8.jpg",
     "static/media/SocialIcons.svg": "/100Focs/static/media/SocialIcons.841b6ff36955a350f487595bfd407689.svg",
     "static/media/Backgound.jpg": "/100Focs/static/media/Backgound.059edc9a43253201136c.jpg",
     "static/media/Logo100Focs.png": "/100Focs/static/media/Logo100Focs.69eb9a2e752df4a422a0.png",
     "index.html": "/100Focs/index.html",
     "static/media/ButtonMenu.svg": "/100Focs/static/media/ButtonMenu.1291948eaceef78e8125df2e21705ac4.svg",
-    "main.5e37dd6c.css.map": "/100Focs/static/css/main.5e37dd6c.css.map",
-    "main.29be4954.js.map": "/100Focs/static/js/main.29be4954.js.map"
+    "main.bf831736.css.map": "/100Focs/static/css/main.bf831736.css.map",
+    "main.8d45bf88.js.map": "/100Focs/static/js/main.8d45bf88.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e37dd6c.css",
-    "static/js/main.29be4954.js"
+    "static/css/main.bf831736.css",
+    "static/js/main.8d45bf88.js"
   ]
 }
